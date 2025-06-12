@@ -14,7 +14,7 @@ public class InMemoryDatabase {
     private StudentPojo studentPojo = new StudentPojo();
     @Bean
     public List<StudentPojo> studentPojoList(){
-        return Arrays.asList(new StudentPojo(1, "KOKO", "F", 80.0),
+        return new ArrayList<>(Arrays.asList(new StudentPojo(1, "KOKO", "F", 80.0),
                 new StudentPojo(2, "Kaka","M",85.0),
                 new StudentPojo(3,"Koka","M",88.0),
                 new StudentPojo(4,"Ana","F",78.0),
@@ -24,6 +24,6 @@ public class InMemoryDatabase {
                 new StudentPojo(8,"Lyda","F",92.0),
                 new StudentPojo(9,"Rith","M",81.0),
                 new StudentPojo(10,"Nak","M",93.0)
-                );
+                ));
     }
 }

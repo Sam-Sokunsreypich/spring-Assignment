@@ -22,7 +22,7 @@ public class SpringAssignment001Application implements CommandLineRunner {
         }else{
             System.out.println("Student deletion failed");
         }
-        System.out.println();
+
         System.out.println("============ All Student ==========");
         studentService.selectAllStudent().stream().forEach(System.out::println);
     }
